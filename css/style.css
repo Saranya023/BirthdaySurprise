@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff0f5;
+    color: #61283e;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.opening {
+    background: linear-gradient(135deg, #ffb6c9, #ffe4ec, #ffc1d6);
+}
+
+.opening-card {
+    background: rgba(255, 255, 255, .88);
+    padding: 45px 25px;
+    border-radius: 30px;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 15px 45px #d96a9160;
+    animation: appear 1.2s ease;
+}
+
+.heart-icon {
+    font-size: 65px;
+    animation: heartbeat 1.3s infinite;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.opening-card h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.opening-card h2 {
+    margin: 25px 0;
+}
+
+.small-text {
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #b75a7d;
+}
+
+button {
+    background: #e94d82;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: .3s;
+    box-shadow: 0 5px 18px #e94d8250;
+}
+
+button:hover {
+    background: #c72d65;
+    transform: scale(1.06);
+}
+
+.signature {
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #ffe1eb, #ffc2d6, #fff0f5);
+    padding: 30px 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 9vw, 75px);
+    color: #c52c65;
+    margin-top: 25px;
+}
+
+.hero h2 {
+    font-size: clamp(35px, 8vw, 65px);
+}
+
+.subtitle {
+    margin-top: 15px;
+    color: #a64c70;
+}
+
+.big-heart {
+    font-size: 90px;
+    margin: 20px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.section {
+    padding: 80px 20px;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.countdown div {
+    background: white;
+    padding: 20px;
+    min-width: 90px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #b74d7020;
+}
+
+.countdown span {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #d63870;
+}
+
+.countdown small {
+    font-size: 12px;
+}
+
+.letter-section {
+    background: #ffe2eb;
+}
+
+.letter {
+    background: #fffafc;
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px #c65d8020;
+    text-align: left;
+    line-height: 2;
+}
+
+.letter h3 {
+    color: #d63870;
+    margin: 15px 0;
+}
+
+.letter p {
+    margin: 18px 0;
+}
+
+.letter h2 {
+    text-align: center;
+    color: #d63870;
+    margin-top: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 35px auto 0;
+}
+
+.photo {
+    background: white;
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px #b74d7025;
+    transition: .3s;
+}
+
+.photo:hover {
+    transform: translateY(-8px);
+}
+
+.photo img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    animation: imageFade 6s ease-in-out infinite;
+}
+
+.photo:nth-child(2) img {
+    animation-delay: .5s;
+}
+
+.photo:nth-child(3) img {
+    animation-delay: 1s;
+}
+
+.photo:nth-child(4) img {
+    animation-delay: 1.5s;
+}
+
+.photo:nth-child(5) img {
+    animation-delay: 2s;
+}
+
+.photo:nth-child(6) img {
+    animation-delay: 2.5s;
+}
+
+.photo:nth-child(7) img {
+    animation-delay: 3s;
+}
+
+.photo:nth-child(8) img {
+    animation-delay: 3.5s;
+}
+
+.photo p {
+    padding: 15px 5px 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.final-section {
+    background: linear-gradient(135deg, #ffc1d6, #ffe9f0);
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-section p {
+    max-width: 550px;
+    line-height: 2;
+    margin: 15px;
+}
+
+.final-love {
+    font-size: clamp(28px, 7vw, 48px);
+    color: #d12665;
+    margin: 25px 0;
+    animation: heartbeat 1.5s infinite;
+}
+
+#surpriseMessage {
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #c52c65;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 25px;
+    background: #7c2949;
+    color: white;
+}
+
+.opening,
+.hero,
+.section {
+    background-image:
+        linear-gradient(rgba(255, 240, 245, .78), rgba(255, 240, 245, .78)),
+        url("../assets/images/love.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    background-image:
+        linear-gradient(rgba(124, 41, 73, .72), rgba(124, 41, 73, .72)),
+        url("../assets/images/love.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.floating-heart {
+    position: absolute;
+    bottom: -30px;
+    animation: floatUp 7s linear forwards;
+    opacity: .7;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes imageFade {
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    20%,
+    80% {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .photo img {
+        animation: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .letter {
+        padding: 22px;
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .photo img {
+        height: 300px;
+    }
+}
